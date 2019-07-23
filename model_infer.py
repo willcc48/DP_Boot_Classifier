@@ -6,7 +6,7 @@ from pathlib import Path
 
 import tensorflow as tf
 import numpy as np
-import os, random
+import os
 import cv2
 
 if __name__ == '__main__':
