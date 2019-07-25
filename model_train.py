@@ -3,7 +3,8 @@ from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D
 from keras.layers import Activation, Dropout, Flatten, Dense
 
-import os, tensorflow as tf
+import tensorflow as tf
+import os
 
 if __name__ == '__main__':
 
@@ -11,7 +12,7 @@ if __name__ == '__main__':
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
     tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
-    # definitions
+    # define model input parameters
     img_width, img_height = 256, 192
     img_shape = (img_width, img_height, 3)
 
@@ -22,7 +23,7 @@ if __name__ == '__main__':
     epochs = 10
     batch_size = 32
 
-    # model architecture
+    # construct model
     model = Sequential()
     model.add(Conv2D(32, (3, 3), input_shape=img_shape))
     model.add(Activation('relu'))
