@@ -12,7 +12,7 @@ import os, random
 
 if __name__ == '__main__':
 
-    RUN_MODEL_ON_TEST_DATA = True
+    RUN_MODEL_ON_TEST_DATA = False
     TEST_DATA_SORTED_BY_CLASS = False
     CV_DISPLAY_WRONG_PREDICTIONS = True # works if TEST_DATA_SORTED_BY_CLASS = TRUE
     CV_DISPLAY_SOME_RAND_PREDICTIONS = True
